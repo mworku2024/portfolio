@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        body{
+             margin: 0;
+             font-family: Arial, Helvetica, sans-serif;
+             background-color: #faf3e0;
+        }
+        .container {
+            display: grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr)) ;
+            gap: 20px;
+           
+            max-width:1000px;
+            margin: 40px auto;
+            padding: 10px;
+            
+            
+        }
+        .container img{
+          width: 100%;
+          border-radius: 20px;
+          border: 8px solid rgb(152,28,28);
+          object-fit: cover;
+          transition: transform 0.3s ease, box-shadow 0.3s ease ;
+        }
+
+        .container img:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        #lightbox{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            z-index: 9999;
+        }
+        #lightbox img{
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 20px;
+            border: 8px solid white;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+            animation: fadein 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+        .nav-bar ul {
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                padding: 10px;
+                flex-wrap: wrap;
+                margin: 0;
+                gap: 5px;
+                background-color: white;
+                border-bottom: 5px solid rgb(79, 109, 43);
+
+
+            }
+            .nav-bar{
+                margin: 0;
+                padding: 0;
+            }
+
+
+            nav ul {
+                list-style: none;
+            }
+            nav a {
+                text-decoration: none;
+                color: goldenrod;
+                display: block;
+                padding: 10px;
+
+            }
+            nav a:hover{
+                text-decoration: overline;
+                color: blue;
+                border-radius: 20px;
+            }
+            img{
+                width: 100%;
+                border: 10px solid rgb(152, 28, 28);
+               border-radius: 20px;
+                gap: 10px;
+            
+            }
+
+            @media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    img {
+        border-width: 5px;
+    }
+
+}
+@media (max-width: 600px) {
+    .gallery img {
+        border-width: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- nav- bar section -->
+    
+    <nav class="nav-bar">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="psalm.html">Daily Psalms </a></li>
+        <li><a href="proverb.html">Proverbs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#">Encouragement </a></li>
+        <li><a href="praise.html">Praises</a></li>
+        </ul>
+    </nav>
+
+
+<!-- images section  -->
+    <div class="container">
+    <div><img src="images/oldimage.jpeg" alt=""></div>
+    <div><img src="images/warrior.jpeg .jpeg" alt=""></div>
+    <div><img src="images/dove.jpeg" alt=""></div>
+
+    <div><img src="/images/psalms150.webp" alt=""></div>
+    
+</div>
+
+<div id="lightbox">
+    <img id="lightbox-img" src="" alt="">
+</div>
+       <!-- javascript section  -->
+<script>
+    const galleryImages = document.querySelectorAll('.container img');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            lightboxImg.src = img.src;
+        });
+    });
+
+    lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+</script>
+</body>
+</html>

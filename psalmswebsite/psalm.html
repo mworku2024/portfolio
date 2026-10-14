@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="" href="index.html">
+    <title>psalms</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            html , body{
+                margin: 0;
+                padding:0;
+                width: 100%;
+                min-height: 100%;
+            }
+            body{
+                background: linear-gradient(#074b86,#f5af19);
+            }
+            header{
+                background: #f3eed8;
+                margin: 0;
+                text-align: center;
+            }
+            .wrapper{
+                display: flex;
+                background-image: url(psalm.jpeg);
+                width: 100%;
+                min-height: 400px;
+                background-position:top;
+                background-size: cover;
+
+
+            }
+
+
+            nav ul {
+                list-style: none;
+            }
+            nav a {
+                text-decoration: none;
+                color: goldenrod;
+                display: block;
+                padding: 10px;
+                border-radius: 20px;
+                
+
+              
+            }
+
+            li{
+                padding: 10px;
+                border-radius: 5px;
+                
+            }
+            .nav-bar ul {
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                padding: 10px;
+                flex-wrap: wrap;
+                margin: 0;
+                gap: 5px;
+                background-color: white;
+                
+                
+
+            }
+            .nav-bar{
+                margin: 0;
+                padding: 0;
+            }
+            .content{
+                background-color: bisque;
+                border: 4px solid black;
+                border-top: 4px solid green;
+                padding: 20px;
+                margin: 20px ;
+            }
+            nav a:hover{
+                text-decoration: overline;
+                color: blue;
+                border-radius: 20px;
+            }
+            nav a:active{
+                background: rgb(238, 244, 238);
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            .btn    {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            #cards{
+                display: grid;
+                grid-template-rows: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 1.5rem;
+                background: #f3eed8;
+                padding:1.25rem 1.5rem;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+                background: #074b86;
+
+
+            }
+
+            .card{
+                border: 2px solid goldenrod;
+                padding: 20px;
+                border-radius:40px ;
+                
+            }
+        
+            .card-header {
+                font-size: 0.85rem;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: goldenrod;
+                margin: 0.5rem;
+                text-align: center;
+            }
+            .card-reference{
+                font-weight: 600;
+                color: white;
+                margin-bottom: 0.75rem;
+            }
+            .card-verse{
+                font-size: 1.98rem;
+                line-height: 1.6;
+                color:white;
+            }
+            .card-footer{
+                margin-top: 1rem;
+                font-size: 0.8rem;
+                color: #9a9fb0;
+                text-align: right;
+            }
+            #cards{
+                break-before: page;
+            }
+            .container{
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+            }
+           input{
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+           }
+           .btn-1{
+                border-radius: 10px;
+                background: rgba(221, 189, 46, 0.97);
+                height: 25px;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: black;
+                font-weight: bold;
+                font-size: 16px;
+                font-style: italic;
+           }
+           
+        
+           
+        </style>
+    </head>
+    <body>
+        <!-- nav section -->
+        <nav class="nav-bar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#cards">Daily Psalms </a></li>
+            <li><a href="proverb.html">Proverbs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Encouragement </a></li>
+            <li><a href="praise.html">Praises</a></li>
+            </ul>
+        </nav>
+            <div class="container">
+        
+            <input type="text" placeholder="search for verses">
+        <button class="btn-1">Search</button>
+            </div>
+            <!-- psalm card section -->
+            <section id="cards">
+                <article class="card">
+                <div class="card-header">Psalm</div>
+                <div class="card-reference">Psalm 23:4</div>
+                    <p class="card-verse">
+                        Even though I walk
+                        through the darkest valley,
+                        I will fear no evil,
+                        for you are with me;
+                            your rod and your staff,
+                            they comfort me.
+
+                        </p>
+                    <div class="card-footer">NIV</div>
+                    </article>
+                    <article class="card">
+                    <div class="card-header">Psalm</div>
+                    <div class="card-reference">Psalm 27:1</div>
+                        <p class="card-verse">
+                            The LORD is my light and my salvation —
+                            whom shall I fear?
+                            The LORD is the stronghold of my life—
+                            of whom shall I be afraid?
+                        </p>
+                    <div class="card-footer">NIV</div>
+                    </article>
+                    <article class="card">
+                    <div class="card-header">Psalm</div>
+                    <div class="card-reference">Psalm 91:14-16</div>
+                        <p class="card-verse">
+                            Because he loves me,” says the LORD, “I will rescue him;
+                            I will protect him, for he acknowledges my name.
+                            He will call on me, and I will answer him;
+                            I will be with him in trouble,
+                            I will deliver him and honor him.
+                            With long life I will satisfy him
+                            and show him my salvation.
+                        </p>
+                    <div class="card-footer">NIV</div>
+                    </article>
+                    <article class="card">
+                    <div class="card-header">Psalm</div>
+                    <div class="card-reference">Psalm 33:11</div>
+                        <p class="card-verse">
+                            But the plans of the LORD stand firm forever,
+                            the purposes of his heart through all generations.
+                        </p>
+                    <div class="card-footer">NIV</div>
+                    </article>
+                    <article class="card">
+                    <div class="card-header">Psalm</div>
+                    <div class="card-reference">Psalm 33:16-18</div>
+                        <p class="card-verse">
+                            No king is saved by the size of his army;
+                            no warrior escapes by his great strength.
+                            A horse is a vain hope for deliverance;
+                            despite all its great strength it cannot save.
+                            But the eyes of the LORD are on those who fear him,
+                            on those whose hope is in his unfailing love,
+                        </p>
+                    <div class="card-footer">NIV</div>
+                    </article>
+                    <article class="card">
+                    <div class="card-header">Psalm</div>
+                    <div class="card-reference">Psalm 34:5-7</div>
+                        <p class="card-verse">
+                            Those who look to him are radiant;
+                            their faces are never covered with shame.
+                            This poor man called, and the LORD heard him;
+                            he saved him out of all his troubles.
+                            The angel of the LORD encamps around those who fear him,
+                            and he delivers them.
+                        </p>
+                    </article>
+
+                    <section id="cards">
+                        <article class="card">
+                        <div class="card-header">Psalm</div>
+                        <div class="card-reference">Psalm 36:5-6</div>
+                            <p class="card-verse">
+                                Your love, LORD, reaches to the heavens,
+                                your faithfulness to the skies.
+                                Your righteousness is like the highest mountains,
+                                your justice like the great deep.
+                                You, LORD, preserve both people and animals.
+                            </p>
+                        </article>
+                   
+                    <article class="card">
+                    <div class="card-header">Psalm</div>
+                    <div class="card-reference">Psalm 147:5-6</div>
+                        <p class="card-verse">
+                            Great is our Lord and mighty in power;
+                            his understanding has no limit.
+                            The LORD sustains the humble
+                            but casts the wicked to the ground.
+                        </p>
+                    </article>
+
+                    
+
+                    </div>
+                 </section>
+                    <script>
+                        const searchInput = document.querySelector("input[type='text']");
+                        const searchButton = document.querySelector(".btn-1");
+                        const cards = document.querySelectorAll(".card");
+
+                        searchInput.addEventListener("keydown", (event)  => {
+                            if(event.key === "Enter") {
+                                searchButton.click();
+                            }
+                        });
+
+
+                        searchButton.addEventListener("click", () => {
+                            
+
+                            const query = searchInput.value.toLowerCase().trim();
+
+                            cards.forEach(card => {
+
+                                const verse = card.querySelector(".card-verse").textContent.toLowerCase();
+                                const reference = card.querySelector(".card-reference").textContent.toLowerCase();
+
+                                if (verse.includes(query) || reference.includes(query)) {
+                                        card.style.display = "block";
+                                    } else {
+                                        card.style.display = "none";
+                                    }
+
+                            });
+
+                    });
+
+                  
+                </script>
+            </body>

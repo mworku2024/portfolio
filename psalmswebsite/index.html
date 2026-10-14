@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>psalms</title>
+        <style>
+            *{
+                box-sizing: border-box;
+
+            }
+            html , body{
+                margin: 0;
+                padding:0;
+                width: 100%;
+                min-height: 100%;
+            }
+            body{
+                background: linear-gradient(#000c40 , #607d8b);
+            }
+
+            .wrapper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 30px 0;
+            }
+            .images{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .images img{
+                width: 250px;
+                height: 160px;
+                object-fit: cover;
+                border-radius: 25px;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+                padding: 5px;
+                background:linear-gradient(#000c40 , #607d8b);
+            }
+            .btn-1{
+                padding: 5px;
+                border-radius: 10px;
+                background-color:greenyellow;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+            h2{
+                text-align: center;
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav a {
+                text-decoration: none;
+                color: goldenrod;
+                display: block;
+                padding: 10px;
+
+            }
+
+            li{
+
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .nav-bar ul {
+                display: flex;
+                justify-content: center;
+                font-size: 20px;
+                padding: 10px;
+                flex-wrap: wrap;
+                margin: 0;
+                gap: 5px;
+                background-color: white;
+                border-bottom: 5px solid rgb(79, 109, 43);
+
+
+            }
+            .nav-bar{
+                margin: 0;
+                padding: 0;
+            }
+
+
+            .content{
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                margin: 30px auto;
+                max-width: 1300px;
+                font-size: 20px;
+                line-height: 1.7;
+
+
+
+
+            }
+            .content::first-letter{
+                font-size:35px;
+                font-weight: bold;
+
+            }
+
+     
+            
+            nav a:hover{
+                text-decoration: overline;
+                color: blue;
+                border-radius: 20px;
+            }
+            nav a:active{
+                background: rgb(238, 244, 238);
+            }
+            .hero{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                max-width: 100%;
+                height: 650px;
+                background-size: cover;
+                background-position:center;
+                background-repeat: no-repeat;
+                margin: 0 auto ;
+                background-image: url("./images/psalms150.webp");
+
+            }
+
+            html{
+                scroll-behavior: smooth;
+            }
+
+            footer{
+                background: grey;
+                text-align: center;
+                padding: 45px 0;
+            }
+
+            @media (max-width: 768px) {
+
+
+                main {
+                    padding: 20px 15px;
+                }
+                .hero{
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 400px;
+                    height: 220px;
+
+                }
+
+                .content{
+                    flex-direction: column;
+                    padding: 30px 20px;
+                    width: 100%;
+                    max-width: 600px;
+                }
+                .psalm-text{
+                    font-size: 1.1rem;
+                    line-height: 1.8;
+                }
+                .hero{
+                    height: 220px;
+                }
+                .first::first-letter{
+                    font-size: 3em;
+                }
+                .nav-bar ul{
+                    width: 100%;
+                    text-align: center;
+                }
+                .images img{
+                    width: 100%;
+                    max-width: 350px;
+                }
+
+            }
+            div,h2,p{
+                color: white;
+            }
+            .first::first-letter{
+               font-size: 3.5em;
+               font-weight: bold;
+               color: goldenrod;
+               margin-right: 8px;
+               line-height: 0.9;
+            }
+            .psalm-text{
+                width: 100%;
+                max-width: 950px;
+                font-size:1.25em ;
+                line-height: 1.8;
+                text-align: left;
+                
+              }
+              .psalm-text p{
+                margin: 0;
+              }
+            .hero-content{
+                text-align: center;
+                padding: 25px 35px;
+                background: rgba(0, 0, 0, 0.55);
+                border-radius: 15px;
+                margin-bottom: 60px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- nav section -->
+
+        <nav class="nav-bar">
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Verses.html">Verses</a></li>
+            <li><a href="psalm.html">Daily Psalms </a></li>
+            <li><a href="proverb.html">Proverbs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Encouragement </a></li>
+            <li><a href="praise.html">Praises</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- hero section  -->
+
+
+            <section class="hero">
+
+            </section>
+
+
+
+            <!-- paragraph section -->
+            <section class="content">
+
+                <div  class="psalm-text">
+
+                
+                    <p class="first"> I  love the Psalms because they speak to every season of life. When I am happy, thankful, worried, discouraged, or searching for peace,
+                       I can find words in the Psalms that express what is in my heart.
+                        The Psalms remind me that I am not alone.
+
+                        They teach me to trust God during difficult times, to be thankful during good times, and to keep my faith when I don't understand what is happening.
+                        What I love most is that the Psalms are honest. They show joy, fear, sadness, hope, and faith. They remind me that I can bring my true feelings to God and still trust Him.
+                        For me, the Psalms are more than just words on a page. They are a source of encouragement, peace, wisdom, and faith that I can return to again and again.
+
+                    </p>
+
+                </div>
+               
+
+
+            </section>
+
+
+
+        </main>
+        <footer>
+        <p>© Michael Worku 2026</p>
+        <p>A personal project inspired by the Psalms.</p>
+        </footer>
+    </body>
+</html>
