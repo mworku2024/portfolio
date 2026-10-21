@@ -201,6 +201,659 @@
             <option value="8">proverbs 16:20</option>
             <option value="9">proverbs 16:31</option>
             <option value="10">proverbs 16:32</option>
+                <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+    
+        nav ul {
+            list-style: none;
+        }
+        nav a {
+            text-decoration: none;
+            color: goldenrod;
+            display: block;
+            padding: 10px;
+
+        }
+        .nav-bar ul {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            padding: 10px;
+            flex-wrap: wrap;
+            margin: 0;
+            gap: 5px;
+            background-color: white;
+            border-bottom: 5px solid rgb(79, 109, 43);
+
+
+        }
+        .nav-bar{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a:hover{
+            text-decoration: overline;
+            color: blue;
+            border-radius: 20px;
+        }
+        nav a:active{
+            background: rgb(238, 244, 238);
+        }
+            body{
+               
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                background-image: url(temple.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              
+            }
+
+            h1{
+                color: white;
+                text-align: center;
+                margin: 40px 0;
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background:rgba(23, 45, 188, 0.6);
+                padding: 30px;
+                border-radius: 20px;
+                text-align: center;
+                width: 90%;
+                max-width: 1500px;
+                min-height: 600px;
+                height: auto;
+            }
+            #proverbBox{
+                margin-top: 20px;
+                padding: 20px;
+                min-height: 80px;
+                background: rgb(251, 254, 251.0.1);
+                border-radius: 10px;
+                font-size: 1.9rem;
+                font-weight: 400;
+                font-family: serif;
+                color: white;
+                line-height: 1.8;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.8s ease, transform  0.8s ease ;
+            } 
+            select{
+                padding: 10px 20px;
+            }
+            .subtitle{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 900;
+                color: white;
+            }
+            button{
+                margin: 10px auto;
+                border: none;
+                padding: 15px;
+                border-radius: 15px;
+                background-color: goldenrod;
+            }
+            button:hover{
+                background-color: goldenrod;
+                transform: translateY(-2px);
+            }
+            label{
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            #fontSizeSlider{
+                width: 220px;
+                margin: 10px 0;
+            }
+            #fontSizeValue{
+                display: block;
+                margin-bottom: 15px;
+                font-weight: bold;
+                color: goldenrod;
+            }
+            .button-row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin: 20px 0;
+            }
+            .button-row button {
+                margin: 0;
+                min-width: 130px;
+            }
+            body.dark{
+                background: linear-gradient(#455a81#243b55);
+                background-attachment: fixed;
+            }
+            body.dark .container {
+                background: #2a2727;
+            }
+            body.dark #proverbBox{
+                background: #333;
+                color: white;
+            }
+            body.dark select{
+                background: #444;
+                color: white;
+                border: 1px solid #666;
+            }
+            body.dark h1{
+                color: white;
+            }
+            body.dark button {
+                background: #555;
+                color: white;
+            }
+            body.dark .subtitle{
+                color: white;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <nav class="nav-bar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Verses.html">Verses</a></li>
+            <li><a href="psalm.html">Daily Psalms </a></li>
+            <li><a href="proverb.html">Proverbs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Encouragement </a></li>
+            <li><a href="praise.html">Praises</a></li>
+            </ul>
+        </nav>
+    <h1>Proverbs Collection NIV</h1>
+        <div class="container">
+        <p class="subtitle">Tap to Reveal Proverbs</p>
+
+            <select name="Proverbs" id="proverbselect">
+            <option value="">Choose a Proverb</option>
+            <option value="0">Proverb 2:2-5</option>
+            <option value="1">Proverb 10:4</option>
+            <option value="2">Proverb 10:5</option>
+            <option value="3">proverbs 19:11</option>
+            <option value="4">proverbs 19:8</option>
+            <option value="5">proverbs 14:29</option>
+            <option value="6">proverbs 14:27</option>
+            <option value="7">proverbs 14:4</option>
+            <option value="8">proverbs 16:20</option>
+            <option value="9">proverbs 16:31</option>
+            <option value="10">proverbs 16:32</option>
+                <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+    
+        nav ul {
+            list-style: none;
+        }
+        nav a {
+            text-decoration: none;
+            color: goldenrod;
+            display: block;
+            padding: 10px;
+
+        }
+        .nav-bar ul {
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            padding: 10px;
+            flex-wrap: wrap;
+            margin: 0;
+            gap: 5px;
+            background-color: white;
+            border-bottom: 5px solid rgb(79, 109, 43);
+
+
+        }
+        .nav-bar{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a:hover{
+            text-decoration: overline;
+            color: blue;
+            border-radius: 20px;
+        }
+        nav a:active{
+            background: rgb(238, 244, 238);
+        }
+            body{
+               
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                background-image: url(temple.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              
+            }
+
+            h1{
+                color: white;
+                text-align: center;
+                margin: 40px 0;
+                border-top: 2px solid white;
+                border-bottom: 2px solid white;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background:rgba(23, 45, 188, 0.6);
+                padding: 30px;
+                border-radius: 20px;
+                text-align: center;
+                width: 90%;
+                max-width: 1500px;
+                min-height: 600px;
+                height: auto;
+            }
+            #proverbBox{
+                margin-top: 20px;
+                padding: 20px;
+                min-height: 80px;
+                background: rgb(251, 254, 251.0.1);
+                border-radius: 10px;
+                font-size: 1.9rem;
+                font-weight: 400;
+                font-family: serif;
+                color: white;
+                line-height: 1.8;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.8s ease, transform  0.8s ease ;
+            } 
+            select{
+                padding: 10px 20px;
+            }
+            .subtitle{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 900;
+                color: white;
+            }
+            button{
+                margin: 10px auto;
+                border: none;
+                padding: 15px;
+                border-radius: 15px;
+                background-color: goldenrod;
+            }
+            button:hover{
+                background-color: goldenrod;
+                transform: translateY(-2px);
+            }
+            label{
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            #fontSizeSlider{
+                width: 220px;
+                margin: 10px 0;
+            }
+            #fontSizeValue{
+                display: block;
+                margin-bottom: 15px;
+                font-weight: bold;
+                color: goldenrod;
+            }
+            .button-row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                margin: 20px 0;
+            }
+            .button-row button {
+                margin: 0;
+                min-width: 130px;
+            }
+            body.dark{
+                background: linear-gradient(#455a81#243b55);
+                background-attachment: fixed;
+            }
+            body.dark .container {
+                background: #2a2727;
+            }
+            body.dark #proverbBox{
+                background: #333;
+                color: white;
+            }
+            body.dark select{
+                background: #444;
+                color: white;
+                border: 1px solid #666;
+            }
+            body.dark h1{
+                color: white;
+            }
+            body.dark button {
+                background: #555;
+                color: white;
+            }
+            body.dark .subtitle{
+                color: white;
+                font-weight: 900;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <nav class="nav-bar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Verses.html">Verses</a></li>
+            <li><a href="psalm.html">Daily Psalms </a></li>
+            <li><a href="proverb.html">Proverbs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Encouragement </a></li>
+            <li><a href="praise.html">Praises</a></li>
+            </ul>
+        </nav>
+    <h1>Proverbs Collection NIV</h1>
+        <div class="container">
+        <p class="subtitle">Tap to Reveal Proverbs</p>
+
+            <select name="Proverbs" id="proverbselect">
+            <option value="">Choose a Proverb</option>
+            <option value="0">Proverb 2:2-5</option>
+            <option value="1">Proverb 10:4</option>
+            <option value="2">Proverb 10:5</option>
+            <option value="3">proverbs 19:11</option>
+            <option value="4">proverbs 19:8</option>
+            <option value="5">proverbs 14:29</option>
+            <option value="6">proverbs 14:27</option>
+            <option value="7">proverbs 14:4</option>
+            <option value="8">proverbs 16:20</option>
+            <option value="9">proverbs 16:31</option>
+            <option value="10">proverbs 16:32</option>
+            <option value="11">proverbs 29:13</option>
+            <option value="12">proverbs 28:4</option>
+            
+            </select>
+            <div class="button-row">
+                <button id="themeBtn" onclick="toggleTheme()">
+                    🌙 Dark Mode
+                </button>
+            <button onclick="selectProverb()">Show Verse</button>
+            <button onclick="randomProverbs()">🎲Random Proverbs</button>
+           
+            </div>
+        <label for="fontsizeslider">Font Size</label>
+            <input type="range"
+            id="fontSizeSlider"
+            min="16"
+            max="40"
+            value="30"
+            oninput="changeFontSize()">
+        <span id="fontSizeValue">30px</span>
+        <div id="proverbBox"></div>
+      
+        </div>
+        <script>
+            const proverb = [
+                "My son, if you accept my words and store up my commands within you, turning your ear to wisdom and applying your heart to understanding—  indeed, if you call out for insight and cry aloud for understanding, and if you look for it as for silver and search for it as for hidden treasure, then you will understand the fear of the Lord and find the knowledge of God. - Proverbs 2:1-5",
+                "Lazy hands make for poverty but diligent hands bring wealth - Proverbs 10:4",
+                "He Who gathers crops in summer is a prudent son, but he who sleeps during harvest is a disgraceful son. - Proverbs 10:5",
+                "A person's wisdom yields patience it is to one's glory to overlook an offense. - proverbs 19:11",
+                "The one who gets wisdom loves life the one who cherishes understanding will soon prosper. proverbs 19:8",
+                "Whoever is patient has great understanding but one who is quick-tempered displays folly. - proverbs 14:29",
+                "The fear of the Lord is a fountain of life,turning a person from the snares of death. - proverbs 14:27",
+                "The Lord works out everything to its proper end-even the wicked for a day of disaster. - proverbs 16:4",
+                "Whoever gives heed to instruction prospers, and blessed is the one who trust in the Lord. - proverbs 16:20",
+                "Gray hair is a crown of splendor it is attained in the way of righteousness. - proverbs 16:31",
+                "Better a patient person than a warrior, one with self-control than one who takes a city. - proverbs 16:32",
+                "The poor and the oppressor have this in common:the Lord gives sight to the eyes of both. - proverbs 29:13",
+                "Those who forsake instruction praise the wicked, but those who heed it resist them.- proverbs 28:4",
+            ]
+            
+
+
+            
+            function selectProverb(){
+                    const box = document.getElementById('proverbBox');
+                    const select = document.getElementById("proverbselect");
+
+                    if (select.value === "") {
+                            box.textContent = " Please Select a Proverb first.";
+                            return;
+                        }
+                        box.style.opacity = "0";
+                        box.style.transform = "translateY(20px)";
+
+                        setTimeout(()=> {
+                            box.textContent = proverb[select.value];
+                            box.style.opacity = "1";
+                            box.style.transform = "translateY(0)";
+                        }, 200);
+                    }
+
+                    let lastProverb = -1
+
+                    function randomProverbs(){
+                            const box = document.getElementById("proverbBox");
+                            const select = document.getElementById("proverbselect");
+
+                            const randomIndex = Math.floor(Math.random() * proverb.length);
+                            select.value = randomIndex;
+
+                            box.style.opacity = "0";
+                            box.style.transform = "translateY(20px)";
+
+                            setTimeout(() => {
+                                box.textContent = proverb[randomIndex];
+                                box.style.opacity = "1";
+                                box.style.transform = "translateY(0)";
+
+                            }, 200)
+
+
+
+                        }
+                        function toggleTheme() {
+                                document.body.classList.toggle("dark");
+                                const btn = document.getElementById("themeBtn");
+
+                                if(document.body.classList.contains("dark")){
+                                    btn.textContent = " ☀️ Light Mode";
+                                    localStorage.setItem("theme","dark");
+                                } else{
+                                    btn.textContent = " 🌙 Dark Mode";
+                                    localStorage.setItem("theme","light")
+                                }
+                            }
+
+                            function changeFontSize(){
+
+                                const slider = document.getElementById("fontSizeSlider");
+                                const box = document.getElementById("proverbBox");
+                                const value = document.getElementById("fontSizeValue");
+
+                                box.style.fontSize = slider.value + "px";
+                                value.textContent = slider.value + "px";
+                                localStorage.setItem("fontSize", slider.value);
+                            }
+
+                            window.onload = () => {
+
+                                const savedSize = localStorage.getItem("fontSize");
+                                const savedTheme = localStorage.getItem("theme");
+
+                              
+
+                                if (savedSize) {
+                                    document.getElementById("fontSizeSlider").value = savedSize;
+                                    document.getElementById("fontSizeValue").textContent = savedSize + "px";
+                                    document.getElementById("proverbBox").style.fontSize = savedSize + "px";
+                                }
+                                if(savedTheme === "dark"){
+                                    document.body.classList.add("dark");
+                                    document.getElementById("themeBtn").textContent = " ☀️ Light Mode";
+                                }
+                             };
+                        </script>
+                    </body>
+                </html>
+            </select>
+            <div class="button-row">
+                <button id="themeBtn" onclick="toggleTheme()">
+                    🌙 Dark Mode
+                </button>
+            <button onclick="selectProverb()">Show Verse</button>
+            <button onclick="randomProverbs()">🎲Random Proverbs</button>
+           
+            </div>
+        <label for="fontsizeslider">Font Size</label>
+            <input type="range"
+            id="fontSizeSlider"
+            min="16"
+            max="40"
+            value="30"
+            oninput="changeFontSize()">
+        <span id="fontSizeValue">30px</span>
+        <div id="proverbBox"></div>
+      
+        </div>
+        <script>
+            const proverb = [
+                "My son, if you accept my words and store up my commands within you, turning your ear to wisdom and applying your heart to understanding—  indeed, if you call out for insight and cry aloud for understanding, and if you look for it as for silver and search for it as for hidden treasure, then you will understand the fear of the Lord and find the knowledge of God. - Proverbs 2:1-5",
+                "Lazy hands make for poverty but diligent hands bring wealth - Proverbs 10:4",
+                "He Who gathers crops in summer is a prudent son, but he who sleeps during harvest is a disgraceful son. - Proverbs 10:5",
+                "A person's wisdom yields patience it is to one's glory to overlook an offense. - proverbs 19:11",
+                "The one who gets wisdom loves life the one who cherishes understanding will soon prosper. proverbs 19:8",
+                "Whoever is patient has great understanding but one who is quick-tempered displays folly. - proverbs 14:29",
+                "The fear of the Lord is a fountain of life,turning a person from the snares of death. - proverbs 14:27",
+                "The Lord works out everything to its proper end-even the wicked for a day of disaster. - proverbs 16:4",
+                "Whoever gives heed to instruction prospers, and blessed is the one who trust in the Lord. - proverbs 16:20",
+                "Gray hair is a crown of splendor it is attained in the way of righteousness. - proverbs 16:31",
+                "Better a patient person than a warrior, one with self-control than one who takes a city. - proverbs 16:32",
+            ]
+            
+
+            function selectProverb(){
+                    const box = document.getElementById('proverbBox');
+                    const select = document.getElementById("proverbselect");
+
+                    if (select.value === "") {
+                            box.textContent = " Please Select a Proverb first.";
+                            return;
+                        }
+                        box.style.opacity = "0";
+                        box.style.transform = "translateY(20px)";
+
+                        setTimeout(()=> {
+                            box.textContent = proverb[select.value];
+                            box.style.opacity = "1";
+                            box.style.transform = "translateY(0)";
+                        }, 200);
+                    }
+
+                    let lastProverb = -1
+
+                    function randomProverbs(){
+                            const box = document.getElementById("proverbBox");
+                            const select = document.getElementById("proverbselect");
+
+                            const randomIndex = Math.floor(Math.random() * proverb.length);
+                            select.value = randomIndex;
+
+                            box.style.opacity = "0";
+                            box.style.transform = "translateY(20px)";
+
+                            setTimeout(() => {
+                                box.textContent = proverb[randomIndex];
+                                box.style.opacity = "1";
+                                box.style.transform = "translateY(0)";
+
+                            }, 200)
+
+
+
+                        }
+                        function toggleTheme() {
+                                document.body.classList.toggle("dark");
+                                const btn = document.getElementById("themeBtn");
+
+                                if(document.body.classList.contains("dark")){
+                                    btn.textContent = " ☀️ Light Mode";
+                                    localStorage.setItem("theme","dark");
+                                } else{
+                                    btn.textContent = " 🌙 Dark Mode";
+                                    localStorage.setItem("theme","light")
+                                }
+                            }
+
+                            function changeFontSize(){
+
+                                const slider = document.getElementById("fontSizeSlider");
+                                const box = document.getElementById("proverbBox");
+                                const value = document.getElementById("fontSizeValue");
+
+                                box.style.fontSize = slider.value + "px";
+                                value.textContent = slider.value + "px";
+                                localStorage.setItem("fontSize", slider.value);
+                            }
+
+                            window.onload = () => {
+
+                                const savedSize = localStorage.getItem("fontSize");
+                                const savedTheme = localStorage.getItem("theme");
+
+                              
+
+                                if (savedSize) {
+                                    document.getElementById("fontSizeSlider").value = savedSize;
+                                    document.getElementById("fontSizeValue").textContent = savedSize + "px";
+                                    document.getElementById("proverbBox").style.fontSize = savedSize + "px";
+                                }
+                                if(savedTheme === "dark"){
+                                    document.body.classList.add("dark");
+                                    document.getElementById("themeBtn").textContent = " ☀️ Light Mode";
+                                }
+                             };
+                        </script>
+                    </body>
+                </html>
             </select>
             <div class="button-row">
                 <button id="themeBtn" onclick="toggleTheme()">
