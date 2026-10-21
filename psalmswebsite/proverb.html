@@ -13,11 +13,12 @@
         nav ul {
             list-style: none;
         }
-        nav a {
+        nav-bar a {
             text-decoration: none;
             color: goldenrod;
             display: block;
-            padding: 10px;
+            padding: 10px 15px;
+            font-size: 20px;
 
         }
         .nav-bar ul {
@@ -26,6 +27,7 @@
             font-size: 20px;
             padding: 10px;
             flex-wrap: wrap;
+            align-item:center;
             margin: 0;
             gap: 5px;
             background: linear-gradient(#000c40 , #607d8b);
@@ -34,8 +36,9 @@
 
         }
         .nav-bar{
-            margin: 0;
-            padding: 0;
+            display:block;
+            align-self:stretch;
+            width:100%;
         }
 
         nav a:hover{
@@ -56,7 +59,7 @@
                 background-size: cover;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
               
             }
