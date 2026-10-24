@@ -23,43 +23,60 @@
             transition: background 0.4s ease ;
         }
 
-        .nav-bar a {
-            text-decoration: none;
-            color: goldenrod;
-            padding: 10px 15px;
-            font-size: 20px;
-
-        }
         .nav-bar ul {
-            display: flex;
-            justify-content: center;
-            font-size: 20px;
-            padding: 10px;
-            flex-wrap: wrap;
-            align-items:center;
-            margin: 0;
-            gap: 5px;
-            background: linear-gradient(#000c40 , #607d8b);
-   
+                 display: flex;
+                justify-content: center;
+                font-size: 20px;
+                list-style: none;
+                padding: 10px;
+                flex-wrap: wrap;
+                margin: 0;
+                gap: 10px;
+                background: linear-gradient(#596cc1 , #031924);
+              
 
 
-        }
-        .nav-bar{
-            display:block;
-            align-self:stretch;
-            width:100%;
-        }
+            }
 
+            .nav-bar a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 10px 15px;
+                font-size:20px;
+                
 
-        nav a:hover{
-            text-decoration: overline;
-            color: blue;
-            border-radius: 20px;
-        }
-        nav a:active{
-            background: rgb(238, 244, 238);
-        }
+            }
+           
+            .nav-bar{
+                display: block;
+                align-self: stretch;
+                width: 100%;
+            }
+            .nav-menu{
+                display:flex;
+                gap:1.5rem;
+            }
 
+            .nav-link{
+                font-size: 0.95rem;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                position:relative;
+            }
+            .nav-link::after{
+                content: "";
+                position: absolute;
+                left:0;
+                bottom: -4px;
+                width: 0;
+                height: 2px;
+                background-color: yellow;
+                transition:width 0.25s ease;
+            }
+            .nav-link:hover::after{
+                width: 100%;
+            }
         body.dark{
             background:linear-gradient(#141e30, #243b55)
         }
@@ -241,14 +258,15 @@
 
     <!-- nav section -->
     <nav class="nav-bar">
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Verses.html">Verses</a></li>
-        <li><a href="psalm.html">Daily Psalms </a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="#">Encouragement </a></li>
-        <li><a href="praise.html">Praises</a></li>
-        </ul>
+        <ul class="menu-bar">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="Verses.html" class="nav-link">Verses</a></li>
+            <li><a href="psalm.html"class="nav-link">Daily Psalms </a></li>
+            <li><a href="proverb.html"class="nav-link">Proverbs</a></li>
+            <li><a href="gallery.html"class="nav-link">Gallery</a></li>
+            <li><a href="#"class="nav-link">Encouragement </a></li>
+            <li><a href="praise.html"class="nav-link">Praises</a></li>
+            </ul>
     </nav>
 <h1>Psalm Collection NIV</h1>
     <div class="container">
@@ -263,8 +281,6 @@
         <option value="2">Psalm 33:11</option>
         <option value="3">Psalm 30:5</option>
         <option value="4">Psalm 36:5</option>
-         <option value="5">Psalm 10:17</option>
-            
         </select>
         <div class="button-row">
             <button id="themeBtn" onclick="toggleTheme()">
@@ -298,7 +314,7 @@
         ,{text:"But the plans of the Lord stand firm forever,the purpose of his heart through all generation.-Psalm 33:11",scroll:false}
         , {text:"For his anger lasts only a moment, but his favor lasts a lifetime; weeping may stay for the night, but rejoicing comes in the morning - Psalm 30:5",scroll:false}
         ,{text:"Your love, Lord ,reaches to the heavens your faithfulness to the skies. - Psalm 36:5",scroll:false}
-        ,{text:"You,Lord,hear the desire of the afflicted;you encourage them,and you listen to their cry, - Psalm 10:17"}
+
     ]
     function selectPsalm(){
             const box = document.getElementById('psalmBox');

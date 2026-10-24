@@ -60,41 +60,55 @@
     from { opacity: 0; transform: scale(0.95); }
     to { opacity: 1; transform: scale(1); }
 }
-        .nav-bar ul {
-                display: flex;
+              .nav-bar ul {
+                 display: flex;
                 justify-content: center;
                 font-size: 20px;
+                list-style: none;
                 padding: 10px;
                 flex-wrap: wrap;
                 margin: 0;
-                gap: 5px;
-                background: linear-gradient(#000c40 , #607d8b);
-               
+                gap: 10px;
+                background: linear-gradient(#596cc1 , #031924);
+              
 
 
             }
-            .nav-bar{
-                display:block;
-                align-self:stretch;
-                width:100%;
-            }
 
-
-            nav ul {
-                list-style: none;
-            }
-            nav a {
-                text-decoration: none;
-                color: goldenrod;
+            .nav-bar a {
                 display: block;
-                padding: 10px;
+                text-decoration: none;
+                color: white;
+                padding: 10px 15px;
+                font-size:20px;
 
             }
-            nav a:hover{
-                text-decoration: overline;
-                color: blue;
-                border-radius: 20px;
+           
+            .nav-menu{
+                display:flex;
+                gap:1.5rem;
             }
+
+            .nav-link{
+                font-size: 0.95rem;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                position:relative;
+            }
+            .nav-link::after{
+                content: "";
+                position: absolute;
+                left:0;
+                bottom: -4px;
+                width: 0;
+                height: 2px;
+                background-color: yellow;
+                transition:width 0.25s ease;
+            }
+            .nav-link:hover::after{
+                width: 100%;
+            }
+
             img{
                 width: 100%;
                 border: 10px solid rgb(152, 28, 28);
@@ -125,14 +139,15 @@
     <!-- nav- bar section -->
     
     <nav class="nav-bar">
-        <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="psalm.html">Daily Psalms </a></li>
-        <li><a href="proverb.html">Proverbs</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="#">Encouragement </a></li>
-        <li><a href="praise.html">Praises</a></li>
-        </ul>
+        <ul class="menu-bar">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="Verses.html" class="nav-link">Verses</a></li>
+            <li><a href="psalm.html"class="nav-link">Daily Psalms </a></li>
+            <li><a href="proverb.html"class="nav-link">Proverbs</a></li>
+            <li><a href="gallery.html"class="nav-link">Gallery</a></li>
+            <li><a href="#"class="nav-link">Encouragement </a></li>
+            <li><a href="praise.html"class="nav-link">Praises</a></li>
+            </ul>
     </nav>
 
 

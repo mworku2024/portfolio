@@ -55,36 +55,58 @@
                 
             }
             .nav-bar ul {
-                display: flex;
+                 display: flex;
                 justify-content: center;
                 font-size: 20px;
+                list-style: none;
                 padding: 10px;
                 flex-wrap: wrap;
                 margin: 0;
-                gap: 5px;
-                background-color: white;
-                
+                gap: 10px;
+                background: linear-gradient(#596cc1 , #031924);
+              
+
+
+            }
+
+            .nav-bar a {
+                display: block;
+                text-decoration: none;
+                color: white;
+                padding: 10px 15px;
+                font-size:20px;
                 
 
             }
+           
             .nav-bar{
-                margin: 0;
-                padding: 0;
+                display: block;
+                align-self: stretch;
+                width: 100%;
             }
-            .content{
-                background-color: bisque;
-                border: 4px solid black;
-                border-top: 4px solid green;
-                padding: 20px;
-                margin: 20px ;
+            .nav-menu{
+                display:flex;
+                gap:1.5rem;
             }
-            nav a:hover{
-                text-decoration: overline;
-                color: blue;
-                border-radius: 20px;
+
+            .nav-link{
+                font-size: 0.95rem;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                position:relative;
             }
-            nav a:active{
-                background: rgb(238, 244, 238);
+            .nav-link::after{
+                content: "";
+                position: absolute;
+                left:0;
+                bottom: -4px;
+                width: 0;
+                height: 2px;
+                background-color: yellow;
+                transition:width 0.25s ease;
+            }
+            .nav-link:hover::after{
+                width: 100%;
             }
             html{
                 scroll-behavior: smooth;
@@ -170,14 +192,15 @@
     <body>
         <!-- nav section -->
         <nav class="nav-bar">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#cards">Daily Psalms </a></li>
-            <li><a href="proverb.html">Proverbs</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Encouragement </a></li>
-            <li><a href="praise.html">Praises</a></li>
-            </ul>
+            <ul class="menu-bar">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="Verses.html" class="nav-link">Verses</a></li>
+                <li><a href="psalm.html"class="nav-link">Daily Psalms </a></li>
+                <li><a href="proverb.html"class="nav-link">Proverbs</a></li>
+                <li><a href="gallery.html"class="nav-link">Gallery</a></li>
+                <li><a href="#"class="nav-link">Encouragement </a></li>
+                <li><a href="praise.html"class="nav-link">Praises</a></li>
+                </ul>
         </nav>
             <div class="container">
         
