@@ -92,8 +92,30 @@
                 align-self:stretch;
                 width:100%;
             }
+            .nav-menu{
+                display:flex;
+                gap:1.5rem;
+            }
 
-
+            .nav-link{
+              font-size: 0.95rem;
+                 text-transform: uppercase;
+               letter-spacing: 0.08em;
+               position:relative; 
+ }
+ .nav-link::after{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-gold);
+    transition:width 0.25s ease;
+ }
+ .nav-link:hover::after{
+    width: 100%;
+ }
             .content{
 
                 display: flex;
@@ -115,16 +137,6 @@
 
             }
 
-     
-            
-            nav a:hover{
-                text-decoration: overline;
-                color: blue;
-                border-radius: 20px;
-            }
-            nav a:active{
-                background: rgb(238, 244, 238);
-            }
             .hero{
                 display: flex;
                 align-items: center;
@@ -225,14 +237,14 @@
         <!-- nav section -->
 
         <nav class="nav-bar">
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="Verses.html">Verses</a></li>
-            <li><a href="psalm.html">Daily Psalms </a></li>
-            <li><a href="proverb.html">Proverbs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#">Encouragement </a></li>
-            <li><a href="praise.html">Praises</a></li>
+            <ul class="nav-menu">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="Verses.html" class="nav-link" >Verses</a></li>
+            <li><a href="psalm.html" class="nav-link" >Daily Psalms </a></li>
+            <li><a href="proverb.html" class="nav-link" >Proverbs</a></li>
+            <li><a href="gallery.html" class="nav-link" >Gallery</a></li>
+            <li><a href="#" class="nav-link" >Encouragement </a></li>
+            <li><a href="praise.html" class="nav-link" >Praises</a></li>
             </ul>
         </nav>
 
