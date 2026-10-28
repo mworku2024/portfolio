@@ -221,34 +221,67 @@
                                 </main>
                             </div>
                             <script>
-                                const movies = [
-                                    {title: "Anaconda", img: "images/anaconda.jpg"},
-                                    {title: "Battle", img: "images/battle.jpg"},
-                                    {title: "Drama", img: "images/drama.jpg"},
-                                    {title: "Hail Mary", img: "images/ems.jpeg"},
-                                    {title: "Mercy", img: "images/mercy.jpg"},
-                                    {title: "Ready or Not", img: "images/rornot.jpg"},
-                                    {title: "War", img: "images/war.jpg"},
-                                ];
+                               
+const movies = [
+    { title: "Anaconda", img: "images/anacoda.jpg" },
+    { title: "Battle", img: "images/battle.jpg" },
+    { title: "Drama", img: "images/drama.jpg" },
+    { title: "Hail Mary", img: "images/ems.jpeg" },
+    { title: "Mercy", img: "images/mercy.jpg" },
+    { title: "Ready or Not", img: "images/rornot.jpg" },
+    { title: "War", img: "images/war.jpg" }
+];
 
-                                const moviesContainer = document.querySelector(".movies");
-                                const searchInput = document.querySelector(".search-input");
+const moviesContainer = document.querySelector(".movies");
+const searchInput = document.querySelector(".search-input");
+const searchButton = document.querySelector(".search-button");
 
-                                function displayMovies(movies) {
-                                        moviesContainer.innerHTML = "";
+function displayMovies(movieList) {
+    moviesContainer.innerHTML = "";
 
-                                        movieList.forEach(movie => {
-                                            const movieDiv = document.createElement("div");
-                                            movieDiv.classList.add("movie");
+    if (movieList.length === 0) {
+        moviesContainer.textContent = "No movies found.";
+        return;
+    }
 
-                                            movieDiv.innerHTML = `
-                                            <img src="${movie.img}" alt="${movie.title}">
-                                        <h4>${movie.title}</h4>
-                                            `;
+    movieList.forEach(movie => {
+        const movieDiv = document.createElement("div");
+        movieDiv.classList.add("movie");
 
-                                            moviesContainer.appendChild(movieDiv);
-                                    });
-                                }
+        const img = document.createElement("img");
+        img.src = movie.img;
+        img.alt = `${movie.title} movie poster`;
+
+        const title = document.createElement("h4");
+        title.textContent = movie.title;
+
+        movieDiv.appendChild(img);
+        movieDiv.appendChild(title);
+        moviesContainer.appendChild(movieDiv);
+    });
+}
+
+function searchMovies() {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+
+    const filteredMovies = movies.filter(movie =>
+        movie.title.toLowerCase().includes(searchTerm)
+    );
+
+    displayMovies(filteredMovies);
+}
+
+searchButton.addEventListener("click", searchMovies);
+
+searchInput.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+        searchMovies();
+    }
+});
+
+// Display all movies when the page loads.
+displayMovies(movies);
+
                             </script>
                         </body>
                     </html>
