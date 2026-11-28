@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praises</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', serif;
+            background: #111827;
+            color: #F8F5ED;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: #1E1B4B;
+            border-bottom: 2px solid #D4AF37;
+        }
+
+        .nav-bar ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            margin: 0;
+            padding: 15px;
+        }
+
+        .nav-bar a {
+            display: block;
+            text-decoration: none;
+            color: #F8F5ED;
+            padding: 10px 15px;
+            font-size: 18px;
+            transition: 0.3s ease;
+        }
+
+        .nav-bar a:hover {
+            color: #D4AF37;
+            background: #312E81;
+            border-radius: 8px;
+        }
+
+        /* Main title */
+        .title h1 {
+            text-align: center;
+            font-size: 42px;
+            color: #D4AF37;
+            padding: 25px 10px;
+            margin: 0;
+            background: linear-gradient(135deg, #312E81, #111827);
+            border-bottom: 2px solid #D4AF37;
+            letter-spacing: 2px;
+        }
+
+        /* Praises section */
+        .praises {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .praises h2 {
+            color: #D4AF37;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Praise cards */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .container span {
+            display: block;
+            width: 100%;
+            padding: 22px 25px;
+            background: #F8F5ED;
+            color: #312E81;
+            border-left: 6px solid #208bcd;
+            border-radius: 12px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.5;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease,
+                        background 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .container span:hover {
+            transform: translateY(-5px);
+            background: #FFF8E1;
+            box-shadow: 0 8px 20px rgba(212,175,55,0.2);
+        }
+
+        /* Mobile screens */
+        @media (max-width: 600px) {
+            .title h1 {
+                font-size: 32px;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .container span {
+                font-size: 19px;
+                padding: 18px 15px;
+            }
+
+            .nav-bar ul {
+                gap: 3px;
+            }
+
+            .nav-bar a {
+                font-size: 15px;
+                padding: 9px;
+            }
+        }
+
+   
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="Verses.html">Verses</a></li>
+            <li><a href="psalm.html">Daily Psalms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="Myverses.html">My psalm Verses</a></li>
+            <li><a href="praise.html">Praises</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="title">
+            <h1>My Psalm Verses</h1>
+        </div>
+
+        <section class="praises">
+
+          
+
+            <div class="container">
+
+                <span>
+                    Blessed is the one who does not walk in step
+                    with the wicked
+                    or stand in the way that sinners take 
+                    or sit in the company of mockers,
+                    but whose delight is in the law of the lord and who meditates on his law day and night. 
+                    <br><br>
+                    PSALM 1:1-2
+                </span>
+
+                <span>
+                   Many are saying of me "God Will not Deliver him."
+                   But You,Lord,are a shield around me my glory,the one who lifts my head high."
+
+                   <br><br>
+                   PSALM 3:2-3
+                </span>
+
+                <span>
+                    The lord is a refuge for the oppressed,a stronghold in times of trouble.
+                    Those who know your name trust in you for you,  Lord ,have never forsaken those who seek you 
+                    <br><br>
+                    PSALM 9:9-10
+                </span>
+                  
+                <span >
+                   In the Lord I take Refuge.
+                   How Then can you say to me;
+                   "flee like a bird to your mountain."
+                   <br><br>
+                   PSALM 11:1
+                </span>
+                <span >
+                    For the lord is righteous,
+                    he loves justice;
+                    the upright will see his face. 
+                    <br><br>
+                    PSALM 11:7
+                 </span>
+                 <span>
+                    And the word of the Lord are flawless,like silver purified in a crucible,
+                    like gold refined seven times
+                    <br><br>
+                    PSALM 12:6
+                 </span>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
